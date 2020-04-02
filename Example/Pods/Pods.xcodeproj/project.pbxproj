@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CF0E02C85F631603ED10E9974722AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3091C07024360A34004DA9D8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C06F24360A34004DA9D8 /* GradientView.swift */; };
+		3091C07324360AD6004DA9D8 /* NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07224360AD6004DA9D8 /* NibBased.swift */; };
+		3091C07524360AF6004DA9D8 /* UIViewController+NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07424360AF6004DA9D8 /* UIViewController+NibBased.swift */; };
+		3091C077243612EB004DA9D8 /* UIView+NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C076243612EB004DA9D8 /* UIView+NibBased.swift */; };
+		3091C07A243615B5004DA9D8 /* KeyboardConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C079243615B5004DA9D8 /* KeyboardConstraint.swift */; };
+		3091C07C24361642004DA9D8 /* AnimatedKeyboardConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07B24361642004DA9D8 /* AnimatedKeyboardConstraint.swift */; };
+		3091C07F243620B0004DA9D8 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07E243620B0004DA9D8 /* Synchronized.swift */; };
+		3091C08224362342004DA9D8 /* Barriered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C08124362342004DA9D8 /* Barriered.swift */; };
+		35C28F134AF061E5D42C730A60EE4C3F /* Pods-LumiereToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BA775D421610FBECD688508683593 /* Pods-LumiereToolkit_Example-dummy.m */; };
+		58F987E7C99C0C73BD877813D4B3F639 /* LumiereToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC81C11925C6ABD275CDF2175C5315E1 /* LumiereToolkit-dummy.m */; };
+		59D3C6CF32F6C7182FB7515231434E44 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FA529327E2F3459766F7EE12C4CC0 /* Prism.swift */; };
+		77352B6388869FAA6493EC19E2E66456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7B605945ABEE7A5A0B375F23AE19E272 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083C685AA520B7704A4447FA8CD6DF4 /* Creator.swift */; };
+		9AF5546C1F3DC11BD962321C822836AF /* LumiereToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B681AC3E5CF7FF0C9CBF78A548FED7 /* LumiereToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABA02B2198C8A2C7DD6C7E31296E620F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B2DFD6BE3D1EB6DB4E21F8154769D9DD /* Pods-LumiereToolkit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53499500283DD816C00DD641F023620C /* Pods-LumiereToolkit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B7A9B7C90C2C8C55AAB0B1EBCE7B59 /* Pods-LumiereToolkit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82063B0B094E968A694D3ECCE9C0BA0F /* Pods-LumiereToolkit_Tests-dummy.m */; };
+		D1D7D264B1448F97AFBE627F3BD26A10 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C2897934A5612D309F916F0086FE5 /* Reusable.swift */; };
+		DB202794FEBE29B3E610B469288DF793 /* KVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DC59A8C87E59FDCBF5B37D9D41E52 /* KVCBuilder.swift */; };
+		F5D5639CCC426900BF1315C7DF9ABF7C /* Pods-LumiereToolkit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CF3F0AF18BC9AC508C54B699426B49 /* Pods-LumiereToolkit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A7127924C6685D71D40428E623C482 /* UIDevice+ScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E25396301B23C3330ABDD28E5DE7A /* UIDevice+ScreenType.swift */; };
+		F92E2608EB54811B73643E25347D4029 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984022341DF1F52D491081262C304D41 /* Lens.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		660AC5C7D3CBF00582A0D38A4A18E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181A4080BB4F7B61FDDFD3F43A1F135B;
+			remoteInfo = LumiereToolkit;
+		};
+		E6A631985F2512D7F9B413609D4C0D20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB24242AA92CA118B92111ABFB93CE52;
+			remoteInfo = "Pods-LumiereToolkit_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CF3F0AF18BC9AC508C54B699426B49 /* Pods-LumiereToolkit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LumiereToolkit_Example-umbrella.h"; sourceTree = "<group>"; };
+		096A6EBD9700C0065BFCDA3D608B22E3 /* Pods-LumiereToolkit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LumiereToolkit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0AD51D9DC7234127BD8261C6D9EB1E42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1090AD569AC7B31D08E8DEEB61F82480 /* LumiereToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LumiereToolkit.modulemap; sourceTree = "<group>"; };
+		1A2BBD0BED77845C78CD8AFBD21BC7DD /* Pods-LumiereToolkit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LumiereToolkit_Tests.modulemap"; sourceTree = "<group>"; };
+		1E84DE749FF011FE2F329BA84DFD7104 /* Pods-LumiereToolkit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LumiereToolkit_Example.modulemap"; sourceTree = "<group>"; };
+		2C8E799845569D53C734A641FF1DAB78 /* Pods-LumiereToolkit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LumiereToolkit_Example-Info.plist"; sourceTree = "<group>"; };
+		2DF46FA3200B66122D671DC76DE0EE8C /* Pods_LumiereToolkit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LumiereToolkit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3091C06F24360A34004DA9D8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3091C07224360AD6004DA9D8 /* NibBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBased.swift; sourceTree = "<group>"; };
+		3091C07424360AF6004DA9D8 /* UIViewController+NibBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibBased.swift"; sourceTree = "<group>"; };
+		3091C076243612EB004DA9D8 /* UIView+NibBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibBased.swift"; sourceTree = "<group>"; };
+		3091C079243615B5004DA9D8 /* KeyboardConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardConstraint.swift; sourceTree = "<group>"; };
+		3091C07B24361642004DA9D8 /* AnimatedKeyboardConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedKeyboardConstraint.swift; sourceTree = "<group>"; };
+		3091C07E243620B0004DA9D8 /* Synchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronized.swift; sourceTree = "<group>"; };
+		3091C08124362342004DA9D8 /* Barriered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barriered.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33C538F983BBC92793EA439949FEF7D6 /* Pods-LumiereToolkit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LumiereToolkit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A7010D22215A8327787987DF6698E74 /* LumiereToolkit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LumiereToolkit-Info.plist"; sourceTree = "<group>"; };
+		53499500283DD816C00DD641F023620C /* Pods-LumiereToolkit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LumiereToolkit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		565D2F9CD6A8EDD65393E0D64EB077A1 /* Pods-LumiereToolkit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LumiereToolkit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5ED6B1BF36408572A09F7E7A1304E118 /* Pods-LumiereToolkit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LumiereToolkit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6C4C2897934A5612D309F916F0086FE5 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		6EE7034549FFF048A4D89530B8FD6316 /* Pods-LumiereToolkit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LumiereToolkit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		70DDBDE25AE70775EDF3986CE02992A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7AD0EE02A8DEE976E084CCE7ED1E99AA /* Pods_LumiereToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LumiereToolkit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6FA529327E2F3459766F7EE12C4CC0 /* Prism.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
+		82063B0B094E968A694D3ECCE9C0BA0F /* Pods-LumiereToolkit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LumiereToolkit_Tests-dummy.m"; sourceTree = "<group>"; };
+		8662E12A7E539688B9A42A19A646C6F8 /* Pods-LumiereToolkit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LumiereToolkit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8F3BA775D421610FBECD688508683593 /* Pods-LumiereToolkit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LumiereToolkit_Example-dummy.m"; sourceTree = "<group>"; };
+		984022341DF1F52D491081262C304D41 /* Lens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A083C685AA520B7704A4447FA8CD6DF4 /* Creator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
+		A5D3AB39662F47548E0CD0CC3B9EEF63 /* Pods-LumiereToolkit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LumiereToolkit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A79DC59A8C87E59FDCBF5B37D9D41E52 /* KVCBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KVCBuilder.swift; sourceTree = "<group>"; };
+		B08CB401DD6FBD7578CBA5F68092C09E /* LumiereToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LumiereToolkit-prefix.pch"; sourceTree = "<group>"; };
+		BB6E8DC772090151F508C90C1DC82B5C /* Pods-LumiereToolkit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LumiereToolkit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BEED19F677F21BCD4A860054B2C43332 /* Pods-LumiereToolkit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LumiereToolkit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C9B681AC3E5CF7FF0C9CBF78A548FED7 /* LumiereToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LumiereToolkit-umbrella.h"; sourceTree = "<group>"; };
+		CC81C11925C6ABD275CDF2175C5315E1 /* LumiereToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LumiereToolkit-dummy.m"; sourceTree = "<group>"; };
+		CFA7B605AE6DC856F891363FF5860F99 /* LumiereToolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LumiereToolkit.debug.xcconfig; sourceTree = "<group>"; };
+		DAD15AD43F97E68495E21FE8D3CA38D9 /* LumiereToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LumiereToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E455A43C81D9853718037BDA0CAC27BB /* Pods-LumiereToolkit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LumiereToolkit_Tests-Info.plist"; sourceTree = "<group>"; };
+		F3EF287D31BADBAA284446D6F9DBE38C /* LumiereToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LumiereToolkit.release.xcconfig; sourceTree = "<group>"; };
+		FD02717978AC9BE7886ED1A5ACF0D8B0 /* LumiereToolkit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LumiereToolkit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FD9E25396301B23C3330ABDD28E5DE7A /* UIDevice+ScreenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ScreenType.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BABFF92763B71C3D133CF80A0E84DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CF0E02C85F631603ED10E9974722AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2702F167E059EDFA669935C93866AEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77352B6388869FAA6493EC19E2E66456 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1EF97DDD3010113F14CB92078E50EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA02B2198C8A2C7DD6C7E31296E620F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		146A6DBB6FB31FB31339FFF7957F542A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C502CAEE9943609994EC5B497B4A8CA /* Pods-LumiereToolkit_Example */,
+				A0A3306004D2570BAAA30076030AEB0F /* Pods-LumiereToolkit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		234ED630A6638A1447B382FB3E8ABE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD15AD43F97E68495E21FE8D3CA38D9 /* LumiereToolkit.framework */,
+				7AD0EE02A8DEE976E084CCE7ED1E99AA /* Pods_LumiereToolkit_Example.framework */,
+				2DF46FA3200B66122D671DC76DE0EE8C /* Pods_LumiereToolkit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3091C06E24360A2B004DA9D8 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				3091C06F24360A34004DA9D8 /* GradientView.swift */,
+			);
+			path = GradientView;
+			sourceTree = "<group>";
+		};
+		3091C07124360AB3004DA9D8 /* NibBased */ = {
+			isa = PBXGroup;
+			children = (
+				3091C07224360AD6004DA9D8 /* NibBased.swift */,
+				3091C07424360AF6004DA9D8 /* UIViewController+NibBased.swift */,
+				3091C076243612EB004DA9D8 /* UIView+NibBased.swift */,
+			);
+			path = NibBased;
+			sourceTree = "<group>";
+		};
+		3091C078243615A4004DA9D8 /* KeyboardConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				3091C079243615B5004DA9D8 /* KeyboardConstraint.swift */,
+				3091C07B24361642004DA9D8 /* AnimatedKeyboardConstraint.swift */,
+			);
+			path = KeyboardConstraint;
+			sourceTree = "<group>";
+		};
+		3091C07D243620AB004DA9D8 /* Synchronized */ = {
+			isa = PBXGroup;
+			children = (
+				3091C07E243620B0004DA9D8 /* Synchronized.swift */,
+			);
+			path = Synchronized;
+			sourceTree = "<group>";
+		};
+		3091C08024362339004DA9D8 /* Barriered */ = {
+			isa = PBXGroup;
+			children = (
+				3091C08124362342004DA9D8 /* Barriered.swift */,
+			);
+			path = Barriered;
+			sourceTree = "<group>";
+		};
+		4B11E434EDE527209295F6ADA18E969D /* LumiereToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				ED083CB484A44A955F71CF5B14D3BAD9 /* Pod */,
+				9B1E8D35D6E88D90F6FBD537F7D5DF7E /* Sources */,
+				BABC8EE2A4AB7806F02F677340752A83 /* Sources_iOS */,
+				7F1EAC97C3B922741C9D4E32F78845A0 /* Support Files */,
+			);
+			name = LumiereToolkit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		64BF634FCDF292FF70904455C80FDC68 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B11E434EDE527209295F6ADA18E969D /* LumiereToolkit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		73A0C9CECAA1AAF6EFB641804CB7CF6A /* Glass */ = {
+			isa = PBXGroup;
+			children = (
+				984022341DF1F52D491081262C304D41 /* Lens.swift */,
+				7B6FA529327E2F3459766F7EE12C4CC0 /* Prism.swift */,
+			);
+			path = Glass;
+			sourceTree = "<group>";
+		};
+		78CDA6D18D6847DBDDFEB31D292E8B32 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				6C4C2897934A5612D309F916F0086FE5 /* Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		7C502CAEE9943609994EC5B497B4A8CA /* Pods-LumiereToolkit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1E84DE749FF011FE2F329BA84DFD7104 /* Pods-LumiereToolkit_Example.modulemap */,
+				33C538F983BBC92793EA439949FEF7D6 /* Pods-LumiereToolkit_Example-acknowledgements.markdown */,
+				A5D3AB39662F47548E0CD0CC3B9EEF63 /* Pods-LumiereToolkit_Example-acknowledgements.plist */,
+				8F3BA775D421610FBECD688508683593 /* Pods-LumiereToolkit_Example-dummy.m */,
+				8662E12A7E539688B9A42A19A646C6F8 /* Pods-LumiereToolkit_Example-frameworks.sh */,
+				2C8E799845569D53C734A641FF1DAB78 /* Pods-LumiereToolkit_Example-Info.plist */,
+				06CF3F0AF18BC9AC508C54B699426B49 /* Pods-LumiereToolkit_Example-umbrella.h */,
+				BB6E8DC772090151F508C90C1DC82B5C /* Pods-LumiereToolkit_Example.debug.xcconfig */,
+				BEED19F677F21BCD4A860054B2C43332 /* Pods-LumiereToolkit_Example.release.xcconfig */,
+			);
+			name = "Pods-LumiereToolkit_Example";
+			path = "Target Support Files/Pods-LumiereToolkit_Example";
+			sourceTree = "<group>";
+		};
+		7F1EAC97C3B922741C9D4E32F78845A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1090AD569AC7B31D08E8DEEB61F82480 /* LumiereToolkit.modulemap */,
+				CC81C11925C6ABD275CDF2175C5315E1 /* LumiereToolkit-dummy.m */,
+				4A7010D22215A8327787987DF6698E74 /* LumiereToolkit-Info.plist */,
+				B08CB401DD6FBD7578CBA5F68092C09E /* LumiereToolkit-prefix.pch */,
+				C9B681AC3E5CF7FF0C9CBF78A548FED7 /* LumiereToolkit-umbrella.h */,
+				CFA7B605AE6DC856F891363FF5860F99 /* LumiereToolkit.debug.xcconfig */,
+				F3EF287D31BADBAA284446D6F9DBE38C /* LumiereToolkit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LumiereToolkit";
+			sourceTree = "<group>";
+		};
+		97D06C08CA1C827CD826610D476E7742 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				A083C685AA520B7704A4447FA8CD6DF4 /* Creator.swift */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		9B1E8D35D6E88D90F6FBD537F7D5DF7E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3091C08024362339004DA9D8 /* Barriered */,
+				3091C07D243620AB004DA9D8 /* Synchronized */,
+				97D06C08CA1C827CD826610D476E7742 /* Creator */,
+				73A0C9CECAA1AAF6EFB641804CB7CF6A /* Glass */,
+				EAEB415E0184D6C951631E31DFCE970A /* KVCBuilder */,
+				78CDA6D18D6847DBDDFEB31D292E8B32 /* Reusable */,
+			);
+			name = Sources;
+			path = LumiereToolkit/Sources;
+			sourceTree = "<group>";
+		};
+		A0A3306004D2570BAAA30076030AEB0F /* Pods-LumiereToolkit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A2BBD0BED77845C78CD8AFBD21BC7DD /* Pods-LumiereToolkit_Tests.modulemap */,
+				096A6EBD9700C0065BFCDA3D608B22E3 /* Pods-LumiereToolkit_Tests-acknowledgements.markdown */,
+				565D2F9CD6A8EDD65393E0D64EB077A1 /* Pods-LumiereToolkit_Tests-acknowledgements.plist */,
+				82063B0B094E968A694D3ECCE9C0BA0F /* Pods-LumiereToolkit_Tests-dummy.m */,
+				E455A43C81D9853718037BDA0CAC27BB /* Pods-LumiereToolkit_Tests-Info.plist */,
+				53499500283DD816C00DD641F023620C /* Pods-LumiereToolkit_Tests-umbrella.h */,
+				6EE7034549FFF048A4D89530B8FD6316 /* Pods-LumiereToolkit_Tests.debug.xcconfig */,
+				5ED6B1BF36408572A09F7E7A1304E118 /* Pods-LumiereToolkit_Tests.release.xcconfig */,
+			);
+			name = "Pods-LumiereToolkit_Tests";
+			path = "Target Support Files/Pods-LumiereToolkit_Tests";
+			sourceTree = "<group>";
+		};
+		BABC8EE2A4AB7806F02F677340752A83 /* Sources_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3091C078243615A4004DA9D8 /* KeyboardConstraint */,
+				3091C07124360AB3004DA9D8 /* NibBased */,
+				3091C06E24360A2B004DA9D8 /* GradientView */,
+				C7F4DF54344B6378784BEF36E9DC1F21 /* UIDevice+ScreenType */,
+			);
+			name = Sources_iOS;
+			path = LumiereToolkit/Sources_iOS;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7F4DF54344B6378784BEF36E9DC1F21 /* UIDevice+ScreenType */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E25396301B23C3330ABDD28E5DE7A /* UIDevice+ScreenType.swift */,
+			);
+			path = "UIDevice+ScreenType";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				64BF634FCDF292FF70904455C80FDC68 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				234ED630A6638A1447B382FB3E8ABE04 /* Products */,
+				146A6DBB6FB31FB31339FFF7957F542A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEB415E0184D6C951631E31DFCE970A /* KVCBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A79DC59A8C87E59FDCBF5B37D9D41E52 /* KVCBuilder.swift */,
+			);
+			path = KVCBuilder;
+			sourceTree = "<group>";
+		};
+		ED083CB484A44A955F71CF5B14D3BAD9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				70DDBDE25AE70775EDF3986CE02992A4 /* LICENSE */,
+				FD02717978AC9BE7886ED1A5ACF0D8B0 /* LumiereToolkit.podspec */,
+				0AD51D9DC7234127BD8261C6D9EB1E42 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30FB176DD4209F537698128360DC831B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D5639CCC426900BF1315C7DF9ABF7C /* Pods-LumiereToolkit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41C3912CC2657B36D59F068C2C4DD3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DFD6BE3D1EB6DB4E21F8154769D9DD /* Pods-LumiereToolkit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE795772FD6D37C0845815F4F566C59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF5546C1F3DC11BD962321C822836AF /* LumiereToolkit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		181A4080BB4F7B61FDDFD3F43A1F135B /* LumiereToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0E00A01C37510081D7CF38239C2476 /* Build configuration list for PBXNativeTarget "LumiereToolkit" */;
+			buildPhases = (
+				ECE795772FD6D37C0845815F4F566C59 /* Headers */,
+				7714B153A7D8994753ED467432F9CADB /* Sources */,
+				0BABFF92763B71C3D133CF80A0E84DE9 /* Frameworks */,
+				9D310D24400CBCD921AE4C4839F54D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LumiereToolkit;
+			productName = LumiereToolkit;
+			productReference = DAD15AD43F97E68495E21FE8D3CA38D9 /* LumiereToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18AAD3BF806BDA4543F18FBB9B47ABFD /* Pods-LumiereToolkit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA1512897B2D4D9006F45DF4E0657D5 /* Build configuration list for PBXNativeTarget "Pods-LumiereToolkit_Tests" */;
+			buildPhases = (
+				A41C3912CC2657B36D59F068C2C4DD3B /* Headers */,
+				54D6FCF943D189867E1C3CF3CFFEEAC2 /* Sources */,
+				AE1EF97DDD3010113F14CB92078E50EE /* Frameworks */,
+				C1833E732E2B86683EED3221D9A8BC60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEA34F2DDA72A2897C098E0D4FF6FA3 /* PBXTargetDependency */,
+			);
+			name = "Pods-LumiereToolkit_Tests";
+			productName = "Pods-LumiereToolkit_Tests";
+			productReference = 2DF46FA3200B66122D671DC76DE0EE8C /* Pods_LumiereToolkit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB24242AA92CA118B92111ABFB93CE52 /* Pods-LumiereToolkit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DC26C7AF433C630FCC0AC59D81987F /* Build configuration list for PBXNativeTarget "Pods-LumiereToolkit_Example" */;
+			buildPhases = (
+				30FB176DD4209F537698128360DC831B /* Headers */,
+				3B5AF0BDF2740430B7769BB0CE972019 /* Sources */,
+				2702F167E059EDFA669935C93866AEEE /* Frameworks */,
+				E5585DEB98953C2240BA0600D335F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852A3FAA604EFD92291C88E2E4C8938A /* PBXTargetDependency */,
+			);
+			name = "Pods-LumiereToolkit_Example";
+			productName = "Pods-LumiereToolkit_Example";
+			productReference = 7AD0EE02A8DEE976E084CCE7ED1E99AA /* Pods_LumiereToolkit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 234ED630A6638A1447B382FB3E8ABE04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181A4080BB4F7B61FDDFD3F43A1F135B /* LumiereToolkit */,
+				AB24242AA92CA118B92111ABFB93CE52 /* Pods-LumiereToolkit_Example */,
+				18AAD3BF806BDA4543F18FBB9B47ABFD /* Pods-LumiereToolkit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D310D24400CBCD921AE4C4839F54D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1833E732E2B86683EED3221D9A8BC60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5585DEB98953C2240BA0600D335F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B5AF0BDF2740430B7769BB0CE972019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C28F134AF061E5D42C730A60EE4C3F /* Pods-LumiereToolkit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6FCF943D189867E1C3CF3CFFEEAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B7A9B7C90C2C8C55AAB0B1EBCE7B59 /* Pods-LumiereToolkit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7714B153A7D8994753ED467432F9CADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B605945ABEE7A5A0B375F23AE19E272 /* Creator.swift in Sources */,
+				3091C07A243615B5004DA9D8 /* KeyboardConstraint.swift in Sources */,
+				DB202794FEBE29B3E610B469288DF793 /* KVCBuilder.swift in Sources */,
+				3091C08224362342004DA9D8 /* Barriered.swift in Sources */,
+				F92E2608EB54811B73643E25347D4029 /* Lens.swift in Sources */,
+				3091C077243612EB004DA9D8 /* UIView+NibBased.swift in Sources */,
+				58F987E7C99C0C73BD877813D4B3F639 /* LumiereToolkit-dummy.m in Sources */,
+				59D3C6CF32F6C7182FB7515231434E44 /* Prism.swift in Sources */,
+				D1D7D264B1448F97AFBE627F3BD26A10 /* Reusable.swift in Sources */,
+				3091C07C24361642004DA9D8 /* AnimatedKeyboardConstraint.swift in Sources */,
+				3091C07524360AF6004DA9D8 /* UIViewController+NibBased.swift in Sources */,
+				3091C07324360AD6004DA9D8 /* NibBased.swift in Sources */,
+				3091C07F243620B0004DA9D8 /* Synchronized.swift in Sources */,
+				3091C07024360A34004DA9D8 /* GradientView.swift in Sources */,
+				F7A7127924C6685D71D40428E623C482 /* UIDevice+ScreenType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		852A3FAA604EFD92291C88E2E4C8938A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LumiereToolkit;
+			target = 181A4080BB4F7B61FDDFD3F43A1F135B /* LumiereToolkit */;
+			targetProxy = 660AC5C7D3CBF00582A0D38A4A18E114 /* PBXContainerItemProxy */;
+		};
+		DCEA34F2DDA72A2897C098E0D4FF6FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LumiereToolkit_Example";
+			target = AB24242AA92CA118B92111ABFB93CE52 /* Pods-LumiereToolkit_Example */;
+			targetProxy = E6A631985F2512D7F9B413609D4C0D20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02915CBCCE93AA5900618A31F9C1F495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6E8DC772090151F508C90C1DC82B5C /* Pods-LumiereToolkit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LumiereToolkit_Example/Pods-LumiereToolkit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LumiereToolkit_Example/Pods-LumiereToolkit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		190661B823F16250E5D753C1D25FE89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEED19F677F21BCD4A860054B2C43332 /* Pods-LumiereToolkit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LumiereToolkit_Example/Pods-LumiereToolkit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LumiereToolkit_Example/Pods-LumiereToolkit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A92822C7CDF48383BE46EDE94192415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE7034549FFF048A4D89530B8FD6316 /* Pods-LumiereToolkit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LumiereToolkit_Tests/Pods-LumiereToolkit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LumiereToolkit_Tests/Pods-LumiereToolkit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C86716B10613CF771843CF974532D5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED6B1BF36408572A09F7E7A1304E118 /* Pods-LumiereToolkit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LumiereToolkit_Tests/Pods-LumiereToolkit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LumiereToolkit_Tests/Pods-LumiereToolkit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC594524855A8F2BFB744C7E4682778C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA7B605AE6DC856F891363FF5860F99 /* LumiereToolkit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LumiereToolkit/LumiereToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LumiereToolkit/LumiereToolkit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LumiereToolkit/LumiereToolkit.modulemap";
+				PRODUCT_MODULE_NAME = LumiereToolkit;
+				PRODUCT_NAME = LumiereToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDED3E3433D99E1D8C52024E2ACFB1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EF287D31BADBAA284446D6F9DBE38C /* LumiereToolkit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LumiereToolkit/LumiereToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LumiereToolkit/LumiereToolkit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LumiereToolkit/LumiereToolkit.modulemap";
+				PRODUCT_MODULE_NAME = LumiereToolkit;
+				PRODUCT_NAME = LumiereToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13DC26C7AF433C630FCC0AC59D81987F /* Build configuration list for PBXNativeTarget "Pods-LumiereToolkit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02915CBCCE93AA5900618A31F9C1F495 /* Debug */,
+				190661B823F16250E5D753C1D25FE89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA1512897B2D4D9006F45DF4E0657D5 /* Build configuration list for PBXNativeTarget "Pods-LumiereToolkit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A92822C7CDF48383BE46EDE94192415 /* Debug */,
+				C86716B10613CF771843CF974532D5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0E00A01C37510081D7CF38239C2476 /* Build configuration list for PBXNativeTarget "LumiereToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC594524855A8F2BFB744C7E4682778C /* Debug */,
+				FDED3E3433D99E1D8C52024E2ACFB1F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

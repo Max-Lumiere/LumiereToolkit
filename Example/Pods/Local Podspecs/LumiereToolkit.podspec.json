@@ -1,0 +1,30 @@
+{
+  "name": "LumiereToolkit",
+  "version": "0.1.0",
+  "summary": "A short description of LumiereToolkit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Max-Lumiere/LumiereToolkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Max Svetlov": "maxim.s.svetlov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Max-Lumiere/LumiereToolkit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0",
+    "osx": "10.15",
+    "watchos": "6.0",
+    "tvos": "13.0"
+  },
+  "swift_versions": "5.1",
+  "source_files": "LumiereToolkit/Sources/**/*",
+  "ios": {
+    "source_files": "LumiereToolkit/Sources_iOS/**/*"
+  },
+  "swift_version": "5.1"
+}

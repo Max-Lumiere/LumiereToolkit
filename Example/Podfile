@@ -6,6 +6,5 @@ target 'LumiereToolkit_Example' do
   target 'LumiereToolkit_Tests' do
     inherit! :search_paths
 
-    
   end
 end

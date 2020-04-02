@@ -1,0 +1,6 @@
+framework module LumiereToolkit {
+  umbrella header "LumiereToolkit-umbrella.h"
+
+  export *
+  module * { export * }
+}
