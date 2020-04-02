@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LumiereToolkit_Example' do
+  pod 'LumiereToolkit', :path => '../'
+
+  target 'LumiereToolkit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
