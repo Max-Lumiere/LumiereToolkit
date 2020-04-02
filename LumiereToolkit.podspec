@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Tools for work with common things, as threads, creation, initialization, some UI helpers
                        DESC
 
-#  s.homepage         = 'https://github.com/Max-Lumiere/LumiereToolkit'
+  s.homepage         = 'https://github.com/Max-Lumiere/LumiereToolkit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Max Svetlov' => 'maxim.s.svetlov@gmail.com' }
   s.source           = { :git => 'https://github.com/Max-Lumiere/LumiereToolkit.git', :tag => s.version.to_s }
