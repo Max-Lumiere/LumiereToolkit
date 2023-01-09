@@ -16,6 +16,7 @@
 		3091C07C24361642004DA9D8 /* AnimatedKeyboardConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07B24361642004DA9D8 /* AnimatedKeyboardConstraint.swift */; };
 		3091C07F243620B0004DA9D8 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C07E243620B0004DA9D8 /* Synchronized.swift */; };
 		3091C08224362342004DA9D8 /* Barriered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091C08124362342004DA9D8 /* Barriered.swift */; };
+		30A830F0243E4BE700561BD9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A830EF243E4BE700561BD9 /* Observable.swift */; };
 		35C28F134AF061E5D42C730A60EE4C3F /* Pods-LumiereToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BA775D421610FBECD688508683593 /* Pods-LumiereToolkit_Example-dummy.m */; };
 		58F987E7C99C0C73BD877813D4B3F639 /* LumiereToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC81C11925C6ABD275CDF2175C5315E1 /* LumiereToolkit-dummy.m */; };
 		59D3C6CF32F6C7182FB7515231434E44 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FA529327E2F3459766F7EE12C4CC0 /* Prism.swift */; };
@@ -66,6 +67,7 @@
 		3091C07B24361642004DA9D8 /* AnimatedKeyboardConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedKeyboardConstraint.swift; sourceTree = "<group>"; };
 		3091C07E243620B0004DA9D8 /* Synchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronized.swift; sourceTree = "<group>"; };
 		3091C08124362342004DA9D8 /* Barriered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barriered.swift; sourceTree = "<group>"; };
+		30A830EF243E4BE700561BD9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33C538F983BBC92793EA439949FEF7D6 /* Pods-LumiereToolkit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LumiereToolkit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A7010D22215A8327787987DF6698E74 /* LumiereToolkit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LumiereToolkit-Info.plist"; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 			path = Barriered;
 			sourceTree = "<group>";
 		};
+		30A830EE243E4BE000561BD9 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				30A830EF243E4BE700561BD9 /* Observable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
 		4B11E434EDE527209295F6ADA18E969D /* LumiereToolkit */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +278,7 @@
 		9B1E8D35D6E88D90F6FBD537F7D5DF7E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				30A830EE243E4BE000561BD9 /* Observable */,
 				3091C08024362339004DA9D8 /* Barriered */,
 				3091C07D243620AB004DA9D8 /* Synchronized */,
 				97D06C08CA1C827CD826610D476E7742 /* Creator */,
@@ -520,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A830F0243E4BE700561BD9 /* Observable.swift in Sources */,
 				7B605945ABEE7A5A0B375F23AE19E272 /* Creator.swift in Sources */,
 				3091C07A243615B5004DA9D8 /* KeyboardConstraint.swift in Sources */,
 				DB202794FEBE29B3E610B469288DF793 /* KVCBuilder.swift in Sources */,

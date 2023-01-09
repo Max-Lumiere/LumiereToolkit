@@ -1,5 +1,6 @@
 
 open class KeyboardConstraint: NSLayoutConstraint {
+    private var keyboardIsActive = false
 
     public override init() {
         super.init()
@@ -18,6 +19,24 @@ open class KeyboardConstraint: NSLayoutConstraint {
                                                selector: #selector(keyboardConstraintHandleKeyboardWillChangeFrame(_:)),
                                                name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardConstraintHandleKeyboardDidShow(_:)),
+                                               name: UIResponder.keyboardDidShowNotification,
+                                               object: nil)
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardConstraintHandleKeyboardDidHide(_:)),
+                                               name: UIResponder.keyboardDidHideNotification,
+                                               object: nil)
+    }
+
+    @objc private dynamic func keyboardConstraintHandleKeyboardDidShow(_ notification: Notification) {
+        keyboardIsActive = true
+    }
+
+    @objc private dynamic func keyboardConstraintHandleKeyboardDidHide(_ notification: Notification) {
+        keyboardIsActive = false
     }
 
     @objc private dynamic func keyboardConstraintHandleKeyboardWillChangeFrame(_ notification: Notification) {
@@ -25,7 +44,9 @@ open class KeyboardConstraint: NSLayoutConstraint {
     }
 
     func updateConstant(for notification: Notification) {
-        guard let info = notification.userInfo, let endFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
+        guard let info = notification.userInfo,
+              let endFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
+              !keyboardIsActive
             else { return }
         let windowHeight = UIScreen.main.bounds.size.height
         let constantValueOnWindow = windowHeight - endFrame.origin.y
