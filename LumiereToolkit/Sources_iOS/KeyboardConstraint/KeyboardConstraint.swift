@@ -1,6 +1,7 @@
 
 open class KeyboardConstraint: NSLayoutConstraint {
     private var keyboardIsActive = false
+    private var previousKeyboardFrame: CGRect = .zero
 
     public override init() {
         super.init()
@@ -19,37 +20,20 @@ open class KeyboardConstraint: NSLayoutConstraint {
                                                selector: #selector(keyboardConstraintHandleKeyboardWillChangeFrame(_:)),
                                                name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
-
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardConstraintHandleKeyboardDidShow(_:)),
-                                               name: UIResponder.keyboardDidShowNotification,
-                                               object: nil)
-
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardConstraintHandleKeyboardDidHide(_:)),
-                                               name: UIResponder.keyboardDidHideNotification,
-                                               object: nil)
-    }
-
-    @objc private dynamic func keyboardConstraintHandleKeyboardDidShow(_ notification: Notification) {
-        keyboardIsActive = true
-    }
-
-    @objc private dynamic func keyboardConstraintHandleKeyboardDidHide(_ notification: Notification) {
-        keyboardIsActive = false
     }
 
     @objc private dynamic func keyboardConstraintHandleKeyboardWillChangeFrame(_ notification: Notification) {
         updateConstant(for: notification)
     }
 
-    func updateConstant(for notification: Notification) {
+    private func updateConstant(for notification: Notification) {
         guard let info = notification.userInfo,
-              let endFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
-              !keyboardIsActive
+              let endFrame = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
             else { return }
+        defer { previousKeyboardFrame = endFrame }
         let windowHeight = UIScreen.main.bounds.size.height
-        let constantValueOnWindow = windowHeight - endFrame.origin.y
+        let window = UIApplication.shared.windows[0]
+        var constantValueOnWindow = windowHeight - endFrame.origin.y
         let items: [UIView] = [firstItem, secondItem].compactMap { $0 as? UIView }
 
         guard let item = items.first else {
@@ -57,12 +41,13 @@ open class KeyboardConstraint: NSLayoutConstraint {
             return
         }
 
-        if let itemFrameOnWindow = item.superview?.convert(item.frame, to: nil) {
-            constant = max(0, itemFrameOnWindow.maxY - endFrame.origin.y)
-        } else {
-            constant = constantValueOnWindow
-        }
+        let itemFrameOnWindow = window.convert(item.bounds, from: item.coordinateSpace)
+        let keyboardIntersection = previousKeyboardFrame.intersection(window.bounds)
+        let bottomDistance = windowHeight - (itemFrameOnWindow.maxY + keyboardIntersection.height)
 
+        constantValueOnWindow = windowHeight - endFrame.origin.y - bottomDistance
+
+        constant = constantValueOnWindow
         item.superview?.layoutIfNeeded()
     }
 }

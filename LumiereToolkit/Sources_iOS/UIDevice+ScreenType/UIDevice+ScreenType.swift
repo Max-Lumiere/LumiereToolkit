@@ -1,7 +1,7 @@
 
 import UIKit
 
-extension UIDevice {
+public extension UIDevice {
 
     enum ScreenType: String {
         case iPhone4
@@ -27,7 +27,12 @@ extension UIDevice {
 
     var isSmallScreen: Bool { screenType == .iPhone4 || screenType == .iPhone5 }
 
-    static func uiScreenSizeChose(_ small: CGFloat, _ normal: CGFloat) -> CGFloat {
-        UIDevice.current.isSmallScreen ? small : normal
+    var isXFamily: Bool { !Set([ScreenType.iPhone6,
+                                       ScreenType.iPhone6Plus,
+                                       ScreenType.iPhone4,
+                                       ScreenType.iPhone5]).contains(screenType) }
+
+    func uiScreenSizeChose(_ small: CGFloat, _ normal: CGFloat) -> CGFloat {
+        isSmallScreen ? small : normal
     }
 }

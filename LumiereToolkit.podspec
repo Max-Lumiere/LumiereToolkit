@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LumiereToolkit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Some low level useful stuff'
 
 # This description is used to generate tags and improve search results.
@@ -27,11 +27,11 @@ Tools for work with common things, as threads, creation, initialization, some UI
   s.source           = { :git => 'git@github.com:Max-Lumiere/LumiereToolkit.git', :tag => s.version.to_s }
 
 
-  s.ios.deployment_target = '12.0'
-  s.osx.deployment_target = '10.15'
-  s.watchos.deployment_target = '6.0'
-  s.tvos.deployment_target = '13.0'
-  s.swift_versions = "5.1"
+  s.ios.deployment_target = '14.0'
+  s.osx.deployment_target = '12.0'
+#  s.watchos.deployment_target = '9.0'
+  s.tvos.deployment_target = '15.0'
+  s.swift_versions = "5.7"
 
   s.source_files = 'LumiereToolkit/Sources/**/*'
   s.ios.source_files = 'LumiereToolkit/Sources_iOS/**/*'

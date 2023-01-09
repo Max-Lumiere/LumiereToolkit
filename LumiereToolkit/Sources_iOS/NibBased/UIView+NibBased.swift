@@ -1,5 +1,6 @@
+import UIKit
 
-extension NibBased where Self: UIView {
+public extension NibBased where Self: UIView {
 
     static func instantiateFromNib() -> Self {
         if let result = nib.instantiate(withOwner: nil, options: nil).first(where: { $0 is Self }) as? Self {

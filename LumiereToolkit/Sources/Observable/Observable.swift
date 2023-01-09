@@ -1,11 +1,11 @@
 
 import Foundation
 
-class Observable<T: NSNumber>: NSObject {
+public class Observable<T: NSNumber>: NSObject {
 
-    dynamic var value: T
+    public dynamic var value: T
 
-    init(_ value: T) {
+    public init(_ value: T) {
         self.value = value
     }
 }
