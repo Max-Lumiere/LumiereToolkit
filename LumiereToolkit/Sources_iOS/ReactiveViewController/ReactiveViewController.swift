@@ -30,6 +30,9 @@ open class ReactiveViewController: UIViewController {
     private let isActiveSubject = CurrentValueSubject<Bool, Never>(false)
     public let onIsActive: AnyPublisher<Bool, Never>
 
+    private let closeSubject = PassthroughSubject<Void, Never>()
+    public let onClose: AnyPublisher<Void, Never>
+
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         onViewDidLoad = viewDidLoadSubject.eraseToAnyPublisher()
         onViewWillAppear = viewWillAppearSubject.eraseToAnyPublisher()
@@ -40,6 +43,7 @@ open class ReactiveViewController: UIViewController {
         onViewWillLayoutSubviews = viewWillLayoutSubviewsSubject.eraseToAnyPublisher()
         onViewDidLayoutSubviews = viewDidLayoutSubviewsSubject.eraseToAnyPublisher()
         onIsActive = isActiveSubject.eraseToAnyPublisher()
+        onClose = closeSubject.eraseToAnyPublisher()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
@@ -53,6 +57,7 @@ open class ReactiveViewController: UIViewController {
         onViewWillLayoutSubviews = viewWillLayoutSubviewsSubject.eraseToAnyPublisher()
         onViewDidLayoutSubviews = viewDidLayoutSubviewsSubject.eraseToAnyPublisher()
         onIsActive = isActiveSubject.eraseToAnyPublisher()
+        onClose = closeSubject.eraseToAnyPublisher()
         super.init(coder: coder)
     }
 
@@ -81,6 +86,10 @@ open class ReactiveViewController: UIViewController {
     override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewDidDisappearSubject.send(animated)
+
+        if parent == nil && presentingViewController == nil {
+            closeSubject.send(())
+        }
     }
 
     override open func viewWillLayoutSubviews() {
