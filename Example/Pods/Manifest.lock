@@ -1,5 +1,5 @@
 PODS:
-  - LumiereToolkit (0.1.0)
+  - LumiereToolkit (0.2.0)
 
 DEPENDENCIES:
   - LumiereToolkit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LumiereToolkit: 6d00443183418a352d1b833530041fe5a4ef2f6e
+  LumiereToolkit: 7006b76b21d780f2d85a09bc74ba1694c765dc7f
 
-PODFILE CHECKSUM: fd0abedd9ffececec6b7d83b3e99df4b1e6c2837
+PODFILE CHECKSUM: b65a701d4225173087f94fb94da5e63bcafd3123
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.2
